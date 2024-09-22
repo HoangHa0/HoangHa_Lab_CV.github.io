@@ -1,0 +1,78 @@
+section {
+    padding: 60px;
+}
+
+.navbar .nav-link {
+    margin-right: 15px;
+    font-family: 'Source Sans Pro Topnav', sans-serif;
+    text-decoration: bold;
+    font-size: 13px;
+    color: #3A525F;
+    font-weight: bold;
+}
+
+#welcome {
+    background-image: url("images/IMG_0616.PNG");
+}
+
+#guide {
+    color: #ffffff;
+}
+
+#guide:hover {
+    color: #ffd375;;
+}
+
+.home_nav {
+    background-color: #B3BEC3;
+}
+
+iframe {
+    overflow: hidden;
+    border: none;
+}
+
+.glowing-image img {
+    border: 5px solid transparent; /* Transparent initial border */
+    border-radius: 10px; /* Optional: round the corners */
+    box-shadow: 0 0 20px rgba(255, 192, 166, 0.8), /* Soft yellow glow */
+                0 0 30px rgba(255, 192, 166, 0.8),
+                0 0 40px rgba(255, 192, 166, 0.8); /* Stronger glow */
+    transition: box-shadow 0.3s ease-in-out; /* Smooth transition effect */
+}
+
+.glowing-image img:hover {
+    box-shadow: 0 0 40px rgba(255, 192, 166, 1), /* Intense yellow glow */
+                0 0 60px rgba(255, 192, 166, 1),
+                0 0 80px rgba(255, 192, 166, 1); /* Brighter on hover */
+}
+
+/* Ensure that the borders of cards in the group touch */
+.card-group .card {
+    margin: 0; /* Remove any space between the cards */
+    border-color: #198754; /* Match the group border color */
+    border-left-width: 0; /* Remove left border to avoid double borders */
+  }
+
+/* Add the left border to the first card only */
+.card-group .card:first-child {
+    border-left-width: 1px; /* Add left border to the first card */
+}
+
+/* Remove margin-bottom between rows */
+.card-group {
+    margin-bottom: 0;
+}
+
+.border-success {
+    border-color: #d46a8e !important; /* Use !important to enforce the color */
+}
+
+.card {
+    border-color: #d46a8e !important; /* Use !important to enforce the color */
+}
+
+.list-group-item {
+    border-color: #d46a8e !important; /* Change the list group item border color */
+}
+

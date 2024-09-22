@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width:device-width, initial-scale=1.0">
+    <title rel="icon" type="image/x-icon" href="images/favicon.ico">CS50</title>
+    <style>
+      section {
+        padding:20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Nav bar -->
+    <nav class="navbar navbar-expand-lg" style="background-color: #ffd375;">
+      <div class="container-fluid">
+        <a class="navbar-brand" class="nav-link active" aria-current="page" href="index.html">
+          <img src="images/favicon.ico" style="width:35px; height:35px;">
+        </a>
+        <!-- Toggle button for mobile nav bar -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Nav links -->
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="index.html#home">HOME</a>
+            <a class="nav-link" href="about_me.html">ABOUT ME</a>
+            <a class="nav-link" href="#" style="color:#944E63">CS50</a>
+            <a class="nav-link" href="summer_journey.html">MY SUMMER</a>
+            <a class="nav-link" href="final_thoughts.html">FINAL THOUGHTS</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Row 1 -->
+    <section id="first_row">
+      <div class="container-lg mt-4">
+        <div class="row">
+          <!-- Card 0 -->
+          <div class="col-lg-3 col-md-12 mb-4">
+            <div class="card border-success" style="height: 100%;">
+              <div class="card-header bg-transparent border-success">WEEK 0: SCRATCH</div>
+              <div class="card-body">
+                <h5 class="card-title">Starting from Scratch</h5>
+                <img src="images/SCRATCH.png" class="card-img-top mb-2" alt="...">
+                <p class="card-text" style="text-align: justify;">My first original game written in Scratch. It goes by the name "Legend of Suns".</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item border-success">
+                  <a href="https://cs50.harvard.edu/x/2024/psets/0/scratch/" target="_blank" class="class-link">Problem Set 0</a>
+                </li>
+                <li class="list-group-item border-success">
+                  <a href="https://scratch.mit.edu/projects/733913869" target="_blank" class="class-link">My Submission</a>
+                </li>
+              </ul>
+              <div class="card-footer bg-transparent border-success">CS50x24</div>
+            </div>
+          </div>
+          <!-- Group card 1: Shared header and footer -->
+          <div class="col-lg-9 col-md-12 mb-4">
+            <!-- Shared Header -->
+            <div class="card border-success">
+              <div class="card-header bg-transparent border-success">WEEK 1: C</div>
+              <!-- Body content -->
+              <div class="row card-group">
+                <!-- Card 1.1 -->
+                <div class="col-lg-4 col-md-12">
+                  <div class="card" style="height: 100%;">
+                    <div class="card-body">
+                      <h5 class="card-title">Hello, It’s Me</h5>
+                      <img src="images/1.1.jpg" class="card-img-top mt-2 mb-2" alt="...">
+                      <p class="card-text mt-2" style="text-align: justify;"><strong>Problem:</strong> Implement a program in C that prompts the user for their name and then says hello to that user.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item border-success">
+                        <a href="https://cs50.harvard.edu/x/2024/psets/1/me/" target="_blank" class="class-link">Problem Set 1.1</a>
+                      </li>
+                      <li class="list-group-item border-success">
+                        <a href="https://github.com/code50/177388256/tree/main/me" target="_blank" class="class-link">My Submission</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- Card 1.2 -->
+                <div class="col-lg-4 col-md-12">
+                  <div class="card" style="height: 100%;">
+                    <div class="card-body">
+                      <h5 class="card-title">Mario</h5>
+                      <img src="images/1.2.jpg" class="card-img-top mt-2" alt="...">
+                      <p class="card-text mt-2" style="text-align: justify;"><strong>Problem:</strong> Implement a program in C that recreates the pyramid that Mario must hop over, using hashes (#) for bricks.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item border-success">
+                        <a href="https://cs50.harvard.edu/x/2024/psets/1/mario/more/" target="_blank" class="class-link">Problem Set 1.2</a>
+                      </li>
+                      <li class="list-group-item border-success">
+                        <a href="https://github.com/code50/177388256/tree/main/mario-more" target="_blank" class="class-link">My Submission</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- Card 1.3 -->
+                <div class="col-lg-4 col-md-12">
+                  <div class="card" style="height: 100%;">
+                    <div class="card-body">
+                      <h5 class="card-title">Credit</h5>
+                      <img src="images/1.3.jpeg" class="card-img-top mt-2" alt="...">
+                      <p class="card-text mt-2" style="text-align: justify;"><strong>Problem:</strong> Implement a program in C that checks the validity of a given credit card number, using the Luhn's Algorithm.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item border-success">
+                        <a href="https://cs50.harvard.edu/x/2024/psets/1/credit/" target="_blank" class="class-link">Problem Set 1.3</a>
+                      </li>
+                      <li class="list-group-item border-success">
+                        <a href="https://github.com/code50/177388256/tree/main/credit" target="_blank" class="class-link">My Submission</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Shared Footer -->
+              <div class="card-footer bg-transparent border-success">CS50x24</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Row 2 -->
+    <section id="second_row">
+      <div class="container-lg">
+        <div class="row">
+          <!-- Group card 2: Shared header and footer -->
+          <div class="col-lg-9 col-md-12">
+            <!-- Shared Header -->
+            <div class="card border-success">
+              <div class="card-header bg-transparent border-success">WEEK 2: Arrays</div>
+              <!-- Body content -->
+              <div class="row card-group">
+                <!-- Card 2.1 -->
+                <div class="col-lg-4 col-md-12">
+                  <div class="card" style="height: 100%;">
+                    <div class="card-body">
+                      <h5 class="card-title">Scrabble</h5>
+                      <img src="images/2.1.png" class="card-img-top mt-2 mb-2" alt="...">
+                      <img src="images/2.1.jpg" class="card-img-top mt-2" alt="...">
+                      <p class="card-text mt-2" style="text-align: justify;"><strong>Problem:</strong> Implement a program in C that determines the winner of a short Scrabble-like game.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item border-success">
+                        <a href="https://cs50.harvard.edu/x/2024/psets/2/scrabble/" target="_blank" class="class-link">Problem Set 2.1</a>
+                      </li>
+                      <li class="list-group-item border-success">
+                        <a href="https://github.com/code50/177388256/tree/main/scrabble" target="_blank" class="class-link">My Submission</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- Card 2.2 -->
+                <div class="col-lg-4 col-md-12">
+                  <div class="card" style="height: 100%;">
+                    <div class="card-body">
+                      <h5 class="card-title">Readability</h5>
+                      <img src="images/2.2.jpg" class="card-img-top mt-2" alt="...">
+                      <p class="card-text mt-2" style="text-align: justify;"><strong>Problem:</strong> Implement a program that calculates the approximate grade level needed to comprehend some text.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item border-success">
+                        <a href="https://cs50.harvard.edu/x/2024/psets/2/readability/" target="_blank" class="class-link">Problem Set 2.2</a>
+                      </li>
+                      <li class="list-group-item border-success">
+                        <a href="https://github.com/code50/177388256/tree/main/readability" target="_blank" class="class-link">My Submission</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- Card 2.3 -->
+                <div class="col-lg-4 col-md-12">
+                  <div class="card" style="height: 100%;">
+                    <div class="card-body">
+                      <h5 class="card-title">Substitution</h5>
+                      <img src="images/2.3.jpg" class="card-img-top mt-2 mb-2" alt="...">
+                      <img src="images/2.3.png" class="card-img-top mt-2" alt="...">
+                      <p class="card-text mt-2" style="text-align: justify;"><strong>Problem:</strong> Implement a program in C that enables people to encrypt messages using a substitution cipher. </p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item border-success">
+                        <a href="https://cs50.harvard.edu/x/2024/psets/2/substitution/" target="_blank" class="class-link">Problem Set 2.3</a>
+                      </li>
+                      <li class="list-group-item border-success">
+                        <a href="https://github.com/code50/177388256/tree/main/substitution" target="_blank" class="class-link">My Submission</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Shared Footer -->
+              <div class="card-footer bg-transparent border-success">CS50x24</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Row 3 -->
+    <section id="third_row">
+      <div class="container-lg">
+        <div class="row">
+          <!-- Group card 3: Shared header and footer -->
+          <div class="col-lg-9 col-md-12">
+            <!-- Shared Header -->
+            <div class="card border-success">
+              <div class="card-header bg-transparent border-success">WEEK 3: Algorithms</div>
+              <!-- Body content -->
+              <div class="row card-group">
+                <!-- Card 3.1 -->
+                <div class="col-lg-4 col-md-12">
+                  <div class="card" style="height: 100%;">
+                    <div class="card-body">
+                      <h5 class="card-title">Sort</h5>
+                      <img src="images/3.1.png" class="card-img-top mt-2 mb-2" alt="...">
+                      <p class="card-text mt-2" style="text-align: justify;"><strong>Problem:</strong> Analyze three (compiled!) sorting programs to determine which algorithms they use.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item border-success">
+                        <a href="https://cs50.harvard.edu/x/2024/psets/3/sort/" target="_blank" class="class-link">Problem Set 3.1</a>
+                      </li>
+                      <li class="list-group-item border-success">
+                        <a href="https://github.com/code50/177388256/tree/main/sort" target="_blank" class="class-link">My Submission</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- Card 3.2 -->
+                <div class="col-lg-4 col-md-12">
+                  <div class="card" style="height: 100%;">
+                    <div class="card-body">
+                      <h5 class="card-title">Plurality</h5>
+                      <img src="images/3.2.webp" class="card-img-top mt-2" alt="...">
+                      <p class="card-text mt-2" style="text-align: justify;"><strong>Problem:</strong> Implement a program that runs a plurality election.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item border-success">
+                        <a href="https://cs50.harvard.edu/x/2024/psets/3/plurality/" target="_blank" class="class-link">Problem Set 3.2</a>
+                      </li>
+                      <li class="list-group-item border-success">
+                        <a href="https://github.com/code50/177388256/tree/main/plurality" target="_blank" class="class-link">My Submission</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- Card 3.3 -->
+                <div class="col-lg-4 col-md-12">
+                  <div class="card" style="height: 100%;">
+                    <div class="card-body">
+                      <h5 class="card-title">Tideman</h5>
+                      <img src="images/3.3.png" class="card-img-top mt-2 mb-2" alt="...">
+                      <p class="card-text mt-2" style="text-align: justify;"><strong>Problem:</strong> Create a program to simulate an election by the Tideman voting method (also known as “ranked pairs”).</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item border-success">
+                        <a href="https://cs50.harvard.edu/x/2024/psets/3/tideman/" target="_blank" class="class-link">Problem Set 3.3</a>
+                      </li>
+                      <li class="list-group-item border-success">
+                        <a href="https://github.com/code50/177388256/tree/main/tideman" target="_blank" class="class-link">My Submission</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Shared Footer -->
+              <div class="card-footer bg-transparent border-success">CS50x24</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Row 4 -->
+    <section id="fourth_row">
+      <div class="container-lg">
+        <div class="row">
+          <!-- Group card 4: Shared header and footer -->
+          <div class="col-lg-9 col-md-12">
+            <!-- Shared Header -->
+            <div class="card border-success">
+              <div class="card-header bg-transparent border-success">WEEK 4: Memory</div>
+              <!-- Body content -->
+              <div class="row card-group">
+                <!-- Card 4.1 -->
+                <div class="col-lg-4 col-md-12">
+                  <div class="card" style="height: 100%;">
+                    <div class="card-body">
+                      <h5 class="card-title">Volume</h5>
+                      <img src="images/4.1.png" class="card-img-top mt-2 mb-2" alt="...">
+                      <p class="card-text mt-2" style="text-align: justify;"><strong>Problem:</strong> Write a program to modify the volume of an audio file.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item border-success">
+                        <a href="https://cs50.harvard.edu/x/2024/psets/4/volume/" target="_blank" class="class-link">Problem Set 4.1</a>
+                      </li>
+                      <li class="list-group-item border-success">
+                        <a href="https://github.com/code50/177388256/tree/main/volume" target="_blank" class="class-link">My Submission</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- Card 4.2 -->
+                <div class="col-lg-4 col-md-12">
+                  <div class="card" style="height: 100%;">
+                    <div class="card-body">
+                      <h5 class="card-title">Filter</h5>
+                      <img src="images/4.2.bmp" class="card-img-top mt-2" alt="...">
+                      <p class="card-text mt-2" style="text-align: justify;"><strong>Problem:</strong> Write a program to apply filters to BMPs.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item border-success">
+                        <a href="https://cs50.harvard.edu/x/2024/psets/4/filter/more/" target="_blank" class="class-link">Problem Set 4.2</a>
+                      </li>
+                      <li class="list-group-item border-success">
+                        <a href="https://github.com/code50/177388256/tree/main/filter-more" target="_blank" class="class-link">My Submission</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- Card 4.3 -->
+                <div class="col-lg-4 col-md-12">
+                  <div class="card" style="height: 100%;">
+                    <div class="card-body">
+                      <h5 class="card-title">Tideman</h5>
+                      <img src="images/4.3.png" class="card-img-top mt-2 mb-2" alt="...">
+                      <p class="card-text mt-2" style="text-align: justify;"><strong>Problem:</strong> Write a program to recover JPEGs from a memory card.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item border-success">
+                        <a href="https://cs50.harvard.edu/x/2024/psets/4/recover/" target="_blank" class="class-link">Problem Set 4.3</a>
+                      </li>
+                      <li class="list-group-item border-success">
+                        <a href="https://github.com/code50/177388256/tree/main/recover" target="_blank" class="class-link">My Submission</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Shared Footer -->
+              <div class="card-footer bg-transparent border-success">CS50x24</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Row 5 -->
+    <section id="fifth_row">
+      <div class="container-lg">
+        <div class="row">
+          <!-- Group card 5: Shared header and footer -->
+          <div class="col-lg-6 col-md-12">
+            <!-- Shared Header -->
+            <div class="card border-success">
+              <div class="card-header bg-transparent border-success">WEEK 5: Data Structures</div>
+              <!-- Body content -->
+              <div class="row card-group">
+                <!-- Card 5.1 -->
+                <div class="col-lg-6 col-md-12">
+                  <div class="card" style="height: 100%;">
+                    <div class="card-body">
+                      <h5 class="card-title">Inheritance</h5>
+                      <img src="images/5.1.jpg" class="card-img-top mt-2 mb-2" alt="...">
+                      <p class="card-text mt-2" style="text-align: justify;"><strong>Problem:</strong> Simulate the inheritance of blood types for each member of a family.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item border-success">
+                        <a href="https://cs50.harvard.edu/x/2024/psets/5/inheritance/" target="_blank" class="class-link">Problem Set 5.1</a>
+                      </li>
+                      <li class="list-group-item border-success">
+                        <a href="https://github.com/code50/177388256/tree/main/inheritance" target="_blank" class="class-link">My Submission</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- Card 5.2 -->
+                <div class="col-lg-6 col-md-12">
+                  <div class="card" style="height: 100%;">
+                    <div class="card-body">
+                      <h5 class="card-title">Speller</h5>
+                      <img src="images/4.2.bmp" class="card-img-top mt-2" alt="...">
+                      <p class="card-text mt-2" style="text-align: justify;"><strong>Problem:</strong> Implement a program that spell-checks a file, a la the below, using a hash table.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item border-success">
+                        <a href="https://cs50.harvard.edu/x/2024/psets/5/speller/" target="_blank" class="class-link">Problem Set 5.2</a>
+                      </li>
+                      <li class="list-group-item border-success">
+                        <a href="https://github.com/code50/177388256/tree/main/speller" target="_blank" class="class-link">My Submission</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+            <!-- Shared Footer -->
+            <div class="card-footer bg-transparent border-success">CS50x24</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Row 6-->
+    <section id="sixth_row">
+      <div class="container-lg">
+        <div class="row">
+          <!-- Group card 6: Shared header and footer -->
+          <div class="col-md-12">
+            <!-- Shared Header -->
+            <div class="card border-success">
+              <div class="card-header bg-transparent border-success">WEEK 6: Python</div>
+              <!-- Body content -->
+              <div class="row card-group">
+                <!-- Card 6.1 -->
+                <div class="col-lg-2 col-md-12">
+                  <div class="card" style="height: 100%;">
+                    <div class="card-body">
+                      <h5 class="card-title">Hello, Again</h5>
+                      <p class="card-text mt-2" style="text-align: justify;"><strong>Problem:</strong> Implement a program that prompts a user for their name, and then prints hello, so-and-so, where so-and-so is their provided name, exactly as in Problem Set 1. Except that the program this time should be written in Python!</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item border-success">
+                        <a href="https://cs50.harvard.edu/x/2024/psets/6/hello/" target="_blank" class="class-link">Problem Set 6.1</a>
+                      </li>
+                      <li class="list-group-item border-success">
+                        <a href="https://github.com/code50/177388256/tree/main/sentimental-hello" target="_blank" class="class-link">My Submission</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- Card 6.2 -->
+                <div class="col-lg-2 col-md-12">
+                  <div class="card" style="height: 100%;">
+                    <div class="card-body">
+                      <h5 class="card-title">Mario</h5>
+                      <p class="card-text mt-2" style="text-align: justify;"><strong>Problem:</strong> Write a program that recreates a half-pyramid using hashes (#) for blocks, exactly as in Problem Set 1. Except the program this time should be written in Python!</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item border-success">
+                        <a href="https://cs50.harvard.edu/x/2024/psets/6/mario/more/" target="_blank" class="class-link">Problem Set 6.2</a>
+                      </li>
+                      <li class="list-group-item border-success">
+                        <a href="https://github.com/code50/177388256/tree/main/sentimental-mario-more" target="_blank" class="class-link">My Submission</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- Card 6.3 -->
+                <div class="col-lg-2 col-md-12">
+                  <div class="card" style="height: 100%;">
+                    <div class="card-body">
+                      <h5 class="card-title">Credit</h5>
+                      <p class="card-text mt-2" style="text-align: justify;"><strong>Problem:</strong> Write a program that prompts the user for a credit card number and then reports (via print) whether it is a valid American Express, MasterCard, or Visa card number, exactly as in Problem Set 1. Except the program this time should be written in Python!</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item border-success">
+                        <a href="https://cs50.harvard.edu/x/2024/psets/6/credit/" target="_blank" class="class-link">Problem Set 6.3</a>
+                      </li>
+                      <li class="list-group-item border-success">
+                        <a href="https://github.com/code50/177388256/tree/main/sentimental-credit" target="_blank" class="class-link">My Submission</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- Card 6.4 -->
+                <div class="col-lg-2 col-md-12">
+                  <div class="card" style="height: 100%;">
+                    <div class="card-body">
+                      <h5 class="card-title">Readability</h5>
+                      <p class="card-text mt-2" style="text-align: justify;"><strong>Problem:</strong> Write a program that first asks the user to type in some text, and then outputs the grade level for the text, according to the Coleman-Liau formula, exactly as in Problem Set 2, except the program this time should be written in Python.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item border-success">
+                        <a href="https://cs50.harvard.edu/x/2024/psets/6/readability/" target="_blank" class="class-link">Problem Set 6.4</a>
+                      </li>
+                      <li class="list-group-item border-success">
+                        <a href="https://github.com/code50/177388256/tree/main/sentimental-readability" target="_blank" class="class-link">My Submission</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- Card 6.5 -->
+                <div class="col-lg-2 col-md-12">
+                  <div class="card" style="height: 100%;">
+                    <div class="card-body">
+                      <h5 class="card-title">DNA</h5>
+                      <p class="card-text mt-2" style="text-align: justify;"><strong>Problem:</strong> Implement a program that identifies to whom a sequence of DNA belongs.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item border-success">
+                        <a href="https://cs50.harvard.edu/x/2024/psets/6/dna/" target="_blank" class="class-link">Problem Set 6.5</a>
+                      </li>
+                      <li class="list-group-item border-success">
+                        <a href="https://github.com/code50/177388256/tree/main/dna" target="_blank" class="class-link">My Submission</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- Card 6.6 -->
+                <div class="col-lg-2 col-md-12">
+                  <div class="card" style="height: 100%;">
+                    <div class="card-body">
+                      <h5 class="card-title"></h5>
+                      <img src="images/6.6.png" class="card-img-top">
+                      <p class="card-text mt-2" style="text-align: justify;"></p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item border-success">
+                        <br>
+                      </li>
+                      <li class="list-group-item border-success">
+                        <br>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Shared Footer -->
+              <div class="card-footer bg-transparent border-success">CS50x24</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Row 7 -->
+    <section id="seventh_row">
+      <div class="container-lg">
+        <div class="row">
+          <!-- Group card 3: Shared header and footer -->
+          <div class="col-lg-9 col-md-12">
+            <!-- Shared Header -->
+            <div class="card border-success">
+              <div class="card-header bg-transparent border-success">WEEK 7: SQL</div>
+              <!-- Body content -->
+              <div class="row card-group">
+                <!-- Card 7.1 -->
+                <div class="col-lg-4 col-md-12">
+                  <div class="card" style="height: 100%;">
+                    <div class="card-body">
+                      <h5 class="card-title">Songs</h5>
+                      <img src="images/7.1.png" class="card-img-top mt-2 mb-2" alt="...">
+                      <p class="card-text mt-2" style="text-align: justify;"><strong>Problem:</strong> Write SQL queries to answer questions about a database of the 100 most-streamed songs on Spotify in 2018.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item border-success">
+                        <a href="https://cs50.harvard.edu/x/2024/psets/7/songs/" target="_blank" class="class-link">Problem Set 7.1</a>
+                      </li>
+                      <li class="list-group-item border-success">
+                        <a href="https://github.com/code50/177388256/tree/main/songs" target="_blank" class="class-link">My Submission</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- Card 7.2 -->
+                <div class="col-lg-4 col-md-12">
+                  <div class="card" style="height: 100%;">
+                    <div class="card-body">
+                      <h5 class="card-title">Movies</h5>
+                      <img src="images/7.2.png" class="card-img-top mt-2" alt="...">
+                      <p class="card-text mt-2" style="text-align: justify;"><strong>Problem:</strong> Write SQL queries to answer questions about the SQLite database that stores data from IMDb about movies.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item border-success">
+                        <a href="https://cs50.harvard.edu/x/2024/psets/7/movies/" target="_blank" class="class-link">Problem Set 7.2</a>
+                      </li>
+                      <li class="list-group-item border-success">
+                        <a href="https://github.com/code50/177388256/tree/main/movies" target="_blank" class="class-link">My Submission</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- Card 7.3 -->
+                <div class="col-lg-4 col-md-12">
+                  <div class="card" style="height: 100%;">
+                    <div class="card-body">
+                      <h5 class="card-title">Fiftyville</h5>
+                      <img src="images/7.3.png" class="card-img-top mt-2 mb-2" alt="...">
+                      <p class="card-text mt-2" style="text-align: justify;"><strong>Problem:</strong> Query a table using SQL <code>SELECT</code> queries to access the data of interest, find information in the database, and solve the mystery.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item border-success">
+                        <a href="hhttps://cs50.harvard.edu/x/2024/psets/7/fiftyville/" target="_blank" class="class-link">Problem Set 7.3</a>
+                      </li>
+                      <li class="list-group-item border-success">
+                        <a href="https://github.com/code50/177388256/tree/main/fiftyville" target="_blank" class="class-link">My Submission</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Shared Footer -->
+              <div class="card-footer bg-transparent border-success">CS50x24</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Row 8 -->
+    <section id="eighth_row">
+      <div class="container-lg">
+        <div class="row">
+          <!-- Group card 5: Shared header and footer -->
+          <div class="col-lg-6 col-md-12">
+            <!-- Shared Header -->
+            <div class="card border-success">
+              <div class="card-header bg-transparent border-success">WEEK 8: HTML, CSS, JavaScript</div>
+              <!-- Body content -->
+              <div class="row card-group">
+                <!-- Card 8.1 -->
+                <div class="col-lg-6 col-md-12">
+                  <div class="card" style="height: 100%;">
+                    <div class="card-body">
+                      <h5 class="card-title">Trivia</h5>
+                      <img src="images/8.1.png" class="card-img-top mt-2 mb-2" alt="...">
+                      <p class="card-text mt-2" style="text-align: justify;"><strong>Problem:</strong> Design a webpage using HTML, CSS, and JavaScript to let users answer trivia questions.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item border-success">
+                        <a href="https://cs50.harvard.edu/x/2024/psets/8/trivia/" target="_blank" class="class-link">Problem Set 8.1</a>
+                      </li>
+                      <li class="list-group-item border-success">
+                        <a href="https://github.com/code50/177388256/tree/main/trivia" target="_blank" class="class-link">My Submission</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- Card 8.2 -->
+                <div class="col-lg-6 col-md-12">
+                  <div class="card" style="height: 100%;">
+                    <div class="card-body">
+                      <h5 class="card-title">Homepage</h5>
+                      <img src="images/8.2.png" class="card-img-top mt-2" alt="...">
+                      <p class="card-text mt-2" style="text-align: justify;"><strong>Problem:</strong> Build a simple homepage using HTML, CSS, and JavaScript.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item border-success">
+                        <a href="https://cs50.harvard.edu/x/2024/psets/8/homepage/" target="_blank" class="class-link">Problem Set 8.2</a>
+                      </li>
+                      <li class="list-group-item border-success">
+                        <a href="https://github.com/code50/177388256/tree/main/speller" target="_blank" class="class-link">My Submission</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+            <!-- Shared Footer -->
+            <div class="card-footer bg-transparent border-success">CS50x24</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+</html>
